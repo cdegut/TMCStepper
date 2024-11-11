@@ -33,6 +33,9 @@
 #else
 	#define SW_CAPABLE_PLATFORM false
 #endif
+ 
+#if defined(ARDUINO_ARCH_RENESAS)
+	#define SW_CAPABLE_PLATFORM false
 
 #if SW_CAPABLE_PLATFORM
 	#include <SoftwareSerial.h>
